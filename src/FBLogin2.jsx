@@ -53,8 +53,6 @@ const handleLoginClick = () => {
       config_id: "1121290476363268",
       response_type: "code",
       override_default_response_type: true,
-      auth_type: "rerequest",
-      redirect_uri: redirectUri,
     }
   );
 };
