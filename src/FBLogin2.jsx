@@ -1,9 +1,7 @@
 
-import { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 const FacebookBusinessLogin = () => {
-  const [isLoading, setIsLoading] = useState(false);
-
   useEffect(() => {
     window.fbAsyncInit = function () {
       FB.init({
