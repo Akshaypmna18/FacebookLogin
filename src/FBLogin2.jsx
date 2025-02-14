@@ -28,7 +28,7 @@ const handleLoginClick = () => {
     return;
   }
 
-  const redirectUri = encodeURIComponent("https://app.admini.co.in/dashboard/settings?tab=facebookLogin2");
+  const redirectUri ="https://app.admini.co.in/dashboard/settings"
 
   FB.login(
     function (response) {
