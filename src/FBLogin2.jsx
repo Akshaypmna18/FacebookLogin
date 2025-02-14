@@ -54,7 +54,7 @@ const handleLoginClick = () => {
       response_type: "code",
       override_default_response_type: true,
       auth_type: "rerequest",
-      redirect_uri: "https://app.admini.co.in/dashboard/settings?tab=facebookLogin2",
+      redirect_uri: redirectUri,
     }
   );
 };
