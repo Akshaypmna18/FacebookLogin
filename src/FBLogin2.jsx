@@ -1,7 +1,4 @@
-// callback method
 
-// import SubmitBtn from "@/components/submit-btn";
-// import { handleRequest } from "@/lib/services";
 import { useEffect, useState } from "react";
 
 const FacebookBusinessLogin = () => {
@@ -46,7 +43,7 @@ const handleLoginClick = () => {
         const appSecret = '5e5dc837d3b9c485981b088b1f8fdf33';
 
         
-        const url = `https://graph.facebook.com/v22.0/oauth/access_token?client_id=${appId}&redirect_uri=${redirectUri}&client_secret=${appSecret}&code=${authCode}`;
+        const url = `https://graph.facebook.com/v20.0/oauth/access_token?client_id=${appId}&redirect_uri=${redirectUri}&client_secret=${appSecret}&code=${authCode}`;
 
         fetch(url)
           .then(response => response.json())
@@ -66,12 +63,6 @@ const handleLoginClick = () => {
   return (
     <div>
 <button  onClick={handleLoginClick}>Login with Facebook business</button>
-{/*       <SubmitBtn
-        text="Login with Facebook business"
-        onClick={handleLoginClick}
-        isLoading={isLoading}
-        className="w-max"
-      /> */}
     </div>
   );
 };
