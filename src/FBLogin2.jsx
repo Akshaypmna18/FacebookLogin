@@ -7,7 +7,7 @@ const FacebookBusinessLogin = () => {
         appId: "2525589477642277",
         cookie: true,
         xfbml: true,
-        version: "v20.0",
+        version: "v22.0",
       });
     };
 
@@ -41,8 +41,8 @@ const handleLoginClick = () => {
         const appId = "2525589477642277";
         const appSecret = "5e5dc837d3b9c485981b088b1f8fdf33";
 
-        const url = `https://graph.facebook.com/v20.0/oauth/access_token?client_id=${appId}&redirect_uri=${redirectUri}&client_secret=${appSecret}&code=${authCode}`;
-
+        const url = `https://graph.facebook.com/v22.0/oauth/access_token?client_id=${appId}&redirect_uri=${redirectUri}&client_secret=${appSecret}&code=${authCode}`;
+console.log(url)
         fetch(url)
           .then((response) => response.json())
           .then((data) => console.log("Response:", data))
