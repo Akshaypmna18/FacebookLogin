@@ -28,7 +28,8 @@ const handleLoginClick = () => {
     return;
   }
 
-  const redirectUri ="https://app.admini.co.in/dashboard/settings"
+  const redirectUri ="https://staticxx.facebook.com/x/connect/xd_arbiter/?version=46#cb=fbe4671b0ccb27f97&domain=facebook-login-peach-iota.vercel.app&is_canvas=false&origin=https%3A%2F%2Ffacebook-login-peach-iota.vercel.app%2Ffa0d766570e605917&relation=opener&frame=f1e26f643985d914e
+"
 
   FB.login(
     function (response) {
